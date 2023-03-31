@@ -8,6 +8,13 @@ import (
 
 func main() {
 	chain := blockchain.GetBlockchain()
+	chain.AddBlock("Second Block")
+	chain.AddBlock("Thrid Block")
+	chain.AddBlock("Fourth Block")
 
-	fmt.Println(chain)
+	for _, block := range chain.AllBlocks() {
+		fmt.Printf("Data: %s\n", block.Data)
+		fmt.Printf("Hash: %s\n", block.Hash)
+		fmt.Printf("Prev Hash: %s\n\n", block.PrevHash)
+	}
 }
