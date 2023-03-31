@@ -1,7 +1,6 @@
 # Go_coin
 ---
-
-- Features <br>
+## Features
 - Mining  <br>
 - Transactions<br>
 - Database Backend<br>
